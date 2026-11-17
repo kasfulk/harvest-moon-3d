@@ -2,6 +2,9 @@
 
 Farming game 3D kecil di browser: cangkul, tanam, siram, panen, jual, tidur. Three.js, tanpa build step.
 
+![Desktop](docs/screenshot-desktop.png)
+![Mobile](docs/screenshot-mobile.png)
+
 ## Jalan lokal
 
 ```bash
