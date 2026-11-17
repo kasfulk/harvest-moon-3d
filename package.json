@@ -1,0 +1,10 @@
+{
+  "name": "lembah-senja",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Harvest Moon-style 3D farming game in the browser (Three.js)",
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "start": "python3 -m http.server 5173"
+  }
+}

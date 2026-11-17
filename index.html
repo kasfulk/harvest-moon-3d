@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#20361f" />
+<title>Lembah Senja — Harvest Moon 3D</title>
+<link rel="stylesheet" href="./style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app"></div>
+
+<div id="topbar">
+  <div class="chip"><span class="lbl">Hari</span><b id="hud-day">1</b></div>
+  <div class="chip"><span class="lbl">Jam</span><b id="hud-time">06:00</b></div>
+  <div class="chip gold"><span class="lbl">Gold</span><b id="hud-money">120g</b></div>
+</div>
+
+<div id="produce"></div>
+<div id="hint" class="hidden"></div>
+<div id="toast-wrap"></div>
+
+<div id="hotbar"></div>
+
+<button id="help-btn" aria-label="Bantuan">?</button>
+
+<div id="touch" aria-hidden="true">
+  <div id="stick"><div id="knob"></div></div>
+  <button id="act" class="actbtn">A</button>
+</div>
+
+<div id="modal-help" class="modal">
+  <div class="card">
+    <h1>Lembah Senja</h1>
+    <p class="sub">Peternakan kecil 3D di tepi hutan. Tanam, siram, panen, kumpulkan gold.</p>
+    <ul class="controls">
+      <li><span class="k">W A S D</span> jalan</li>
+      <li><span class="k">Shift</span> lari</li>
+      <li><span class="k">E</span> aksi (cangkul / tanam / siram / panen / toko / tidur)</li>
+      <li><span class="k">1 2 3</span> pilih benih</li>
+      <li><span class="k">Drag</span> putar kamera · <span class="k">Wheel</span> zoom</li>
+    </ul>
+    <p class="sub">Tanaman tumbuh satu hari per siraman. Tidur di depan pintu rumah untuk ganti hari. Jual hasil panen di papan toko.</p>
+    <button id="start-btn" class="primary">Mulai bertani</button>
+  </div>
+</div>
+
+<div id="modal-shop" class="modal hidden">
+  <div class="card shop">
+    <button class="close" id="shop-close" aria-label="Tutup">×</button>
+    <h2>Toko Desa</h2>
+    <p class="sub small">Benih pagi, panen sore. Harga jual bagus kalau sabar.</p>
+    <div id="shop-body"></div>
+  </div>
+</div>
+
+<div id="fade"></div>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
